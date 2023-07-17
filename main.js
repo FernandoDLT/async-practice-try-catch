@@ -137,18 +137,6 @@
 
 //Code 08
      // TRY ADDIND A TRY / CATCH   What is try / catch?
-// async function getACuteDogPhoto() {
-//     const res = await fetch('https://dog.ceo/api/breeds/image/random')
-//     const data = await res.json()
-//     console.log(data)
-//     try {
-//         var fetch = await res();
-//         console.log(data);
-//     } catch (error) {
-//         console.error(err);
-//     }
-// }
-// console.log(getACuteDogPhoto)
 
 async function getACuteDogPhoto() {
   try {
@@ -156,7 +144,7 @@ async function getACuteDogPhoto() {
     const data = await res.json();
     console.log(data);
   } catch (error) {
-    console.error(error); // Fix the variable name to "error"
+    console.error(error);
   }
 }
 
